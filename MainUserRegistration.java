@@ -25,6 +25,17 @@ public class MainUserRegistration {
            System.out.println("Enter Your Password ");
            String pass = scan.nextLine();
            check.passwordValid(pass);
+
+           System.out.println("Check Following Email Sample is valid or Invalid");
+           check.emailSampleValid("abc@yahoo.com");
+           check.emailSampleValid("abc-100@yahoo.com");
+           check.emailSampleValid("abc.100@yahoo.com");
+           check.emailSampleValid("abc111@abc.com");
+           check.emailSampleValid("abc-100@abc.net");
+           check.emailSampleValid("abc.100@abc.com.au");
+           check.emailSampleValid("abc@1.com");
+           check.emailSampleValid("abc@gmail.com.com");
+           check.emailSampleValid("abc+100@gamil.com");
        }
     }
 }

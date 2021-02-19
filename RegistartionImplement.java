@@ -48,5 +48,16 @@ public class RegistartionImplement implements RegistrationInterface {
             System.out.println("Entered Password is Invalid");
         }
     }
+
+    public void emailSampleValid(String email) {
+        String regx = "^abc[a-zA-Z0-9.+-]*@[a-z0-9]*[.][a-z]{2,5}[.,a-z]{0,5}";
+        Pattern pattern = Pattern.compile(regx);
+        Matcher matcher = pattern.matcher(email);
+        if (matcher.matches()) {
+            System.out.println("Entered Email Sample is Valid");
+        } else {
+            System.out.println("Entered Email Sample is Invalid");
+        }
+    }
 }
 

@@ -7,4 +7,7 @@ public interface RegistrationInterface {
     void phoneValid(String phoneNumber);
 
     void passwordValid(String password);
+
+    void emailSampleValid(String email);
+
 }
