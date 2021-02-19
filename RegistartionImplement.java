@@ -38,5 +38,15 @@ public class RegistartionImplement implements RegistrationInterface {
         }
     }
 
+    public void passwordValid(String password) {
+        String regx = "^[a-zA-Z]{8,}";
+        Pattern pattern = Pattern.compile(regx);
+        Matcher matcher = pattern.matcher(password);
+        if (matcher.matches()) {
+            System.out.println("Entered Password is Valid");
+        } else {
+            System.out.println("Entered Password is Invalid");
+        }
+    }
 }
 

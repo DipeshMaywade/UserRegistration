@@ -21,6 +21,10 @@ public class MainUserRegistration {
            System.out.println("Enter Your MobileNumber");
            String number = scan.nextLine();
            check.phoneValid(number);
+
+           System.out.println("Enter Your Password ");
+           String pass = scan.nextLine();
+           check.passwordValid(pass);
        }
     }
 }
