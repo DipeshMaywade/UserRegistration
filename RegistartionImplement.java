@@ -39,7 +39,7 @@ public class RegistartionImplement implements RegistrationInterface {
     }
 
     public void passwordValid(String password) {
-        String regx = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}";
+        String regx = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()]).{8,}$";
         Pattern pattern = Pattern.compile(regx);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {
