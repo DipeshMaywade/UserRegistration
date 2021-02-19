@@ -9,7 +9,7 @@ public class RegistartionImplement implements RegistrationInterface {
         Pattern pattern = Pattern.compile(regx);
         Matcher matcher = pattern.matcher(name);
         if (matcher.matches()){
-            System.out.println("Entered Name Valid");
+            System.out.println("Entered Name is Valid");
         }
         else {
             System.out.println("Entered Name is Invalid");

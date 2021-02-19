@@ -9,6 +9,10 @@ public class MainUserRegistration {
            System.out.println("Enter Your First Name: ");
            String firstName = scan.nextLine();
            check.firstNameValid(firstName);
+
+           System.out.println("Enter Your Last Name");
+           String lastName = scan.nextLine();
+           check.firstNameValid(lastName);
        }
     }
 }
