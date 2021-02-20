@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MainUserRegistration {
+public class UserRegistration {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         RegistartionImplement check = new RegistartionImplement();

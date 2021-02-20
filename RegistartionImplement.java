@@ -3,7 +3,6 @@ import java.util.regex.Pattern;
 
 public class RegistartionImplement implements RegistrationInterface {
 
-
     public void firstNameValid(String name){
         String regx = "^[A-Z][a-zA-Z]{2,}";
         Pattern pattern = Pattern.compile(regx);
@@ -50,7 +49,7 @@ public class RegistartionImplement implements RegistrationInterface {
     }
 
     public void emailSampleValid(String email) {
-        String regx = "^abc[a-zA-Z0-9.+-]*@[a-z0-9]*[.][a-z]{2,5}[.,a-z]{0,5}";
+        String regx = "^abc[a-zA-Z0-9.+-]*@[a-z0-9]*[.][a-z]{2,5}[.,a-z]*$";
         Pattern pattern = Pattern.compile(regx);
         Matcher matcher = pattern.matcher(email);
         if (matcher.matches()) {
